@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig 1</title>
+
+    <!-- CSS stylesheet, lagt til for struktur på siden -->
+    <style>
+        tr, th, td, table {
+            border: solid white 10px;
+        }
+
+        #antall {
+            margin-top: 15px;
+        }
+
+        #fornavn {
+            margin-left: 51px;
+        }
+
+        #etternavn {
+            margin-left: 42px;
+        }
+
+        #epost {
+            margin-bottom: 10px;
+            margin-left: 62px;
+        }
+        #telefonnummer{
+            margin-left: 2px;
+        }
+
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+<form id="reset">
+    Velg film: <select id="velgFilm">
+    <option value="feilFilm">Velg film her</option>
+    <option>Hei TA</option>
+    <option>Hvordan går det</option>
+    <option>Håper alt går fint</option>
+    <option>Med gunnars briller</option>
+</select>
+
+    <td><span id="ikkeValgtFilm" style="color:#ff0000"></span><br/></td>
+
+    <tr>
+        <td>Antall</td>
+        <td><input type="text" id="antall" size=2/>
+            <span id="intetTall" style="color:#ff0000"></span><br/></td>
+        <br/>
+    </tr>
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="fornavn"/>
+            <span id="fornavnFeil" style="color:#ff0000"></span><br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etternavn"/>
+            <span id="etternavnFeil" style="color:#ff0000"></span><br/>
+        </td>
+    </tr>
+    <tr>
+        <td>Telefonnummer</td>
+        <td><input type="text" id="telefonnummer"/>
+            <span id="telefonnummerFeil" style="color:#ff0000"></span><br/>
+        </td>
+    </tr>
+    <tr>
+        <td>E-post</td>
+        <td><input type="text" id="epost"/>
+            <span id="epostFeil" style="color:#ff0000"></span><br/>
+        </td>
+    </tr>
+</form>
+
+<button onclick="kjopBillett();">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="registertabell"></div>
+<br/>
+
+
+<tr/>
+
+<button value="SlettAlleBilletter" onclick="slettAlleBilletter();">Slett alle billettene</button>
+
+</body>
+</html>

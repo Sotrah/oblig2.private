@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oblig 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        <h1>Bestilling av kinobilletter</h1>
+            <form class="form">
+                    <div class="form-group">
+                        <h3>Velg film: </h3>
+                        <select id="film">
+                            <option value="feilFilm">Velg film her</option>
+                            <option>Hei TA</option>
+                            <option>Hvordan går det</option>
+                            <option>Håper alt går fint</option>
+                            <option>Med gunnars briller</option>
+                        </select>
+                    </div>
+            </form>
+
+
+       <span id="ikkeValgtFilm" style="color:#ff0000"></span><br/>
+        <div class="form-group">
+
+    <form>
+        <div class="form-group">
+            <label for ="antall">Antall</label>
+            <input class="form-control" type="text" id="antall"/>
+        </div>
+
+
+        <div class="form-group">
+            <label for ="fornavn">Fornavn</label>
+            <input class="form-control" type="text" id="fornavn"/>
+        </div>
+
+
+        <div class="form-group">
+            <label for ="etternavn">Etternavn</label>
+            <input class="form-control" type="text" id="etternavn"/>
+        </div>
+
+
+        <div class="form-group">
+            <label for ="telefonnummer">Telefonnummer</label>
+            <input class="form-control" type="text" id="telefonnummer"/>
+        </div>
+
+
+        <div class="form-group">
+            <label for ="epost">E-post</label>
+            <input class="form-control" type="text" id="epost"/>
+        </div>
+
+
+
+    </form>
+        </div>
+
+    <button class="btn btn-primary" id="register">Kjøp billett </button>
+                </div>
+        <div class="col-md-6">
+    <h2>Alle billetter</h2>
+    <div class ="table-response" id="list"></div>
+
+        </div>
+
+            <div class="col-md-6">
+
+                <button class="btn btn-danger" id="deleteAll">Slett alle billettene </button>
+            </div>
+            </div>
+        </div>
+</body>
+
+</html>
